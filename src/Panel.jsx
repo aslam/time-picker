@@ -129,9 +129,9 @@ class Panel extends Component {
       value ? value.hour() : null,
       value ? value.minute() : null,
     );
-    const hourOptions = generateOptions(24, disabledHourOptions, hideDisabledOptions, hourStep);
+    const hourOptions = generateOptions(31, disabledHourOptions, hideDisabledOptions, hourStep);
     const minuteOptions = generateOptions(
-      60,
+      24,
       disabledMinuteOptions,
       hideDisabledOptions,
       minuteStep,
